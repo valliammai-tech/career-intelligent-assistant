@@ -31,19 +31,19 @@ Upload your resume and one or more job descriptions. Ask questions in plain Engl
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                        Streamlit UI                             │
-│                   localhost:8501                                 │
+│                   localhost:8501                                │
 └──────────────────────────┬──────────────────────────────────────┘
                            │ HTTP
 ┌──────────────────────────▼──────────────────────────────────────┐
 │                      FastAPI Backend                            │
-│                   localhost:8000                                 │
-│                                                                  │
+│                   localhost:8000                                │
+│                                                                 │
 │  /ingest  ──►  Loader → Chunker → Embedder → ChromaDB           │
 │  /chat    ──►  Retriever → GapAnalyser → PromptBuilder → LLM    │
-│  /health  ──►  Status of Ollama + ChromaDB + indexed docs        │
+│  /health  ──►  Status of Ollama + ChromaDB + indexed docs       │
 └────────┬──────────────────────────────┬────────────────────────-┘
          │                              │
-┌────────▼────────┐          ┌──────────▼────────┐
+┌────────▼────────┐          ┌──────────▼──────── ┐
 │    ChromaDB     │          │      Ollama        │
 │  (file-based)   │          │  localhost:11434   │
 │                 │          │                    │
