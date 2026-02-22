@@ -12,6 +12,25 @@
 
 ---
 
+## Demo
+
+### System Health — all services green
+![Health check showing Ollama, ChromaDB and indexed documents all green](docs/screenshots/screenshot-1-health.png)
+
+### Documents Indexed — resume + job description ready
+![Streamlit sidebar showing resume and job_1 successfully indexed](docs/screenshots/screenshot-2-sidebar.png)
+
+### Gap Analysis — skill-by-skill breakdown
+![Gap analysis response showing PRESENT, PARTIAL and MISSING skills with evidence](docs/screenshots/screenshot-3-gap-analysis.png)
+
+### Source Citations — every answer is grounded in retrieved chunks
+![Sources expander showing the actual resume and JD chunks used to generate the answer](docs/screenshots/screenshot-4-sources.png)
+
+### Fit Score — weighted 0–100 score with breakdown
+![Fit score response showing numeric score with technical, soft skills and experience breakdown](docs/screenshots/screenshot-5-fit-score.png)
+
+---
+
 ## What It Does
 
 Upload your resume and one or more job descriptions. Ask questions in plain English:
