@@ -1,0 +1,30 @@
+# Environment — never commit secrets
+.env
+
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.mypy_cache/
+*.egg-info/
+dist/
+build/
+
+# Data — never commit user uploads or the vector DB
+data/
+*.pdf
+*.docx
+*.txt
+
+# Node (doc generator only)
+node_modules/
+
+# Editor
+.vscode/
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db

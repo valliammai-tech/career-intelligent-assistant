@@ -1,0 +1,32 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.mypy_cache/
+
+# Data — never bake DB or uploads into the image
+data/
+
+# Secrets — critical: .env must never go into an image layer
+.env
+
+# Git
+.git/
+.gitignore
+
+# Node
+node_modules/
+
+# Editor
+.vscode/
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test files
+tests/
+pytest.ini
